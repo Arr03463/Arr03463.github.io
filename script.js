@@ -1,21 +1,46 @@
 // ===== Load Local Projects =====
+let allProjects = [];
+
+// Load Projects
 fetch("projects.json")
   .then(res => res.json())
   .then(projects => {
-    const container = document.getElementById("project-list");
-    projects.forEach(p => {
-      const card = document.createElement("div");
-      card.className = "project-card";
-      card.innerHTML = `
-        <h3>${p.title}</h3>
-        <p>${p.description}</p>
-        <p><strong>Tools:</strong> ${p.tools.join(", ")}</p>
-        ${p.video ? `<a href="${p.video}" target="_blank">🎥 Watch Video</a>` : ""}
-      `;
-      container.appendChild(card);
-    });
-  })
-  .catch(err => console.error("Error loading projects:", err));
+    allProjects = projects;
+    renderProjects("all"); // show all on load
+  });
+
+function renderProjects(category) {
+  const container = document.getElementById("project-list");
+  container.innerHTML = "";
+
+  const filtered = category === "all"
+    ? allProjects
+    : allProjects.filter(p => p.category === category);
+
+  filtered.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "project-card";
+    card.innerHTML = `
+  <h3>${p.title}</h3>
+  <p>${p.description}</p>
+  <p><strong>Tools:</strong> ${p.tools.join(", ")}</p>
+  <p><strong>Status:</strong> <span class="status ${p.status.toLowerCase().replace(/\s+/g, '-')}">${p.status}</span></p>
+  ${p.video ? `<a href="${p.video}" target="_blank">🎥 Watch Video</a>` : ""}
+`;
+
+    container.appendChild(card);
+  });
+}
+
+// Handle Tab Clicks
+document.querySelectorAll(".tab-button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const category = btn.getAttribute("data-category");
+    renderProjects(category);
+  });
+});
 
 
 // ===== Load YouTube Videos =====
