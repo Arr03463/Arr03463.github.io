@@ -18,20 +18,21 @@
       "description": "Enhanced version of the proximity system with motion-triggered image capture using ESP32-CAM. Detects nearby objects, records short video clips, and logs entries automatically.",
       "tools": [ "ESP32-CAM", "Ultrasonic Sensor", "Serial Communication"],
       "category": "iot",
-      "status": "In Progress "
+      "status": "In Progress"
     },
     {
       "title": "Automation Ticketing Workflow",
       "description": "Power Automate workflow for creating, tracking, and closing jobsite tickets. Integrates Microsoft Teams notifications, timestamping, and automatic status updates via email and SMS.",
       "tools": ["Microsoft Power Automate", "Microsoft Teams", "Logic Expressions", "Email Automation"],
       "category": "automation"
+        "status": "In Use"
     },
     {
       "title": "CANI Troubleshooting System",
       "description": "CANI (Check, Analyze, Notify, Improve) is a diagnostic automation system built to streamline technical issue management. Integrates Excel tracking, SharePoint storage, and Teams-based alerts.",
       "tools": ["Power Automate", "SharePoint", "Excel", "Microsoft Teams"],
       "category": "automation",
-      "status": "In Use"
+      "status": "In Devlopment"
     },
     {
       "title": "Multi-Camera ESP32-CAM CCTV System",
@@ -86,3 +87,4 @@
     }
   ]
   
+
