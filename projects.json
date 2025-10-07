@@ -32,7 +32,7 @@
       "description": "CANI (Check, Analyze, Notify, Improve) is a diagnostic automation system built to streamline technical issue management. Integrates Excel tracking, SharePoint storage, and Teams-based alerts.",
       "tools": ["Power Automate", "SharePoint", "Excel", "Microsoft Teams"],
       "category": "automation",
-      "status": "In Devlopment"
+      "status": "In Development"
     },
     {
       "title": "Multi-Camera ESP32-CAM CCTV System",
@@ -87,6 +87,7 @@
     }
   ]
   
+
 
 
 
