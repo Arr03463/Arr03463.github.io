@@ -13,9 +13,9 @@ function renderProjects(category) {
   const container = document.getElementById("project-list");
   container.innerHTML = "";
 
-  const filtered = category === "all"
-    ? allProjects
-    : allProjects.filter(p => p.category === category);
+ const filtered = category === "all"
+  ? allProjects
+  : allProjects.filter(p => p.category.trim().toLowerCase() === category.toLowerCase());
 
   filtered.forEach(p => {
     const card = document.createElement("div");
@@ -69,3 +69,4 @@ fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${ch
     });
   })
   .catch(err => console.error("Error loading YouTube videos:", err));
+
