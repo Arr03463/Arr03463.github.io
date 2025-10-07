@@ -1,0 +1,68 @@
+[
+    {
+      "title": "ArroBoat V2",
+      "description": "ArroBoat V2 is a dual-unit wireless RC airboat system designed from the ground up using Arduino microcontrollers and NRF24L01 modules for long-range communication. The project consists of a transmitter (controller) and receiver (boat) that communicate in real time, allowing precise motor control and directional steering over water. The system integrates motor drivers, PWM speed control, and custom-coded signal handling to ensure stability even with environmental interference. This project demonstrates expertise in wireless data transmission, embedded system synchronization, and mechanical-electrical integration through 3D-printed enclosures and water-resistant housing.",
+      "tools": ["Arduino", "NRF24L01", "Motor Drivers", "3D Printing", "C++"]
+    },
+    {
+      "title": "Smart Proximity Alert System",
+      "description": "This project functions as a safety and awareness system that detects approaching objects using an HC-SR04 ultrasonic sensor. When an object enters a set distance threshold, the system activates both audible (buzzer) and visual (RGB LED) alerts that vary based on proximity. It was designed to help illustrate how sensors can enhance human-machine interaction and is suitable for parking sensors, robotics, and automation environments. The final build includes a serial interface for debugging and an optional LCD display for real-time distance readouts.",
+      "tools": ["Arduino", "HC-SR04 Ultrasonic Sensor", "RGB LED", "LCD Display", "Buzzer"]
+    },
+    {
+      "title": "Smart Proximity Counter V2",
+      "description": "An enhanced version of the Smart Proximity Alert System, this build integrates a camera (ESP32-CAM) for object recognition and data logging. It not only detects movement but also records short video clips or captures images when an object enters a predefined range. The system can be extended to serve as a low-cost home monitoring device or smart entry alert. It focuses on combining sensing, visual processing, and microcontroller-based automation to create an intelligent feedback system.",
+      "tools": ["Arduino", "ESP32-CAM", "Ultrasonic Sensor", "Serial Communication"]
+    },
+    {
+      "title": "Automation Ticketing Workflow",
+      "description": "Developed a Power Automate workflow that digitizes the process of creating and managing jobsite tickets. The system automatically generates a unique ticket ID and timestamp, sends updates through Microsoft Teams, and notifies users via email or SMS. This solution eliminated manual logging errors, reduced task turnaround time, and created a structured record trail for team accountability. It demonstrates applied automation in real-world business operations, integrating logic expressions and conditional flows to handle multiple communication channels.",
+      "tools": ["Microsoft Power Automate", "Microsoft Teams", "Email Automation", "Logic Expressions", "JSON"]
+    },
+    {
+      "title": "CANI Troubleshooting System",
+      "description": "CANI (Check Analyze Notify Improve) is a troubleshooting automation system that organizes and accelerates problem-resolution workflows. It uses Microsoft Power Automate and SharePoint to categorize reported issues, assign responsibilities, and trigger alerts based on the severity of incidents. The process includes automated logging in Excel, progress updates through Teams, and performance analytics dashboards. This project showcases advanced workflow engineering and demonstrates Aaron’s ability to design digital systems that improve operational efficiency and communication reliability.",
+      "tools": ["Power Automate", "SharePoint", "Excel", "Microsoft Teams"]
+    },
+    {
+      "title": "Navigating the Digital Sky",
+      "description": "Built as a team project, this Raspberry Pi-based system converts a small single-board computer into a personal cloud server using OwnCloud software. The goal was to create a secure, low-cost alternative to commercial cloud storage platforms. Aaron was responsible for configuring the Raspberry Pi OS, setting up the Apache web server, enabling SSL encryption, and ensuring secure network access. The project highlights skills in Linux administration, file hosting, and the design of user-managed cloud environments.",
+      "tools": ["Raspberry Pi", "OwnCloud", "Apache Server", "Linux", "SSL Encryption"]
+    },
+    {
+      "title": "Multi-Camera ESP32-CAM CCTV System",
+      "description": "A custom surveillance platform developed with multiple ESP32-CAM modules connected over Wi-Fi to a Raspberry Pi base station. Each camera streams live video simultaneously to a unified web dashboard, where footage can be viewed or recorded. This system demonstrates distributed networking, streaming protocols, and embedded camera configuration. Future enhancements include adding cloud-based backups and mobile app access for remote monitoring.",
+      "tools": ["ESP32-CAM", "Wi-Fi Streaming", "Raspberry Pi", "Python", "Networking"]
+    },
+    {
+      "title": "RC Car with Ultrasonic Obstacle Avoidance",
+      "description": "An intelligent RC car that combines manual Bluetooth control with autonomous obstacle avoidance. The vehicle uses dual ultrasonic sensors to detect nearby objects in the front and rear, automatically reversing or changing direction when obstacles are detected. Designed using an Arduino controller and L298N motor driver, the project merges control theory, embedded programming, and robotics logic. It serves as a foundation for more complex autonomous vehicle designs.",
+      "tools": ["Arduino", "HC-SR04", "Bluetooth Module", "L298N Motor Driver"]
+    },
+    {
+      "title": "Arduino Timer (NUCLEO Board)",
+      "description": "A timing and sequencing project built with the STM32 Nucleo development board, designed to perform time-based LED operations and output control. This project emphasizes low-level embedded C programming, precision timing loops, and hardware abstraction. It illustrates understanding of microcontroller timers, interrupts, and digital output manipulation for embedded applications.",
+      "tools": ["STM32 Nucleo", "C Programming", "Embedded Systems"]
+    },
+    {
+      "title": "IoT LED Control & Remote Diagnostics Board",
+      "description": "A connected IoT system that allows users to control LEDs remotely over Wi-Fi or Bluetooth, with built-in diagnostic feedback. The system communicates sensor and control data through serial monitoring, enabling status updates and error reporting in real time. This project demonstrates practical IoT development skills and understanding of networked microcontroller communication protocols.",
+      "tools": ["ESP8266", "Arduino", "Wi-Fi", "Bluetooth", "Serial Communication"]
+    },
+    {
+      "title": "Smart Mini Trash Can (Canny)",
+      "description": "A creative automation project nicknamed 'Canny,' this smart trash can automatically opens its lid when motion is detected. It uses an ultrasonic sensor for distance detection and a servo motor for precise lid control. LEDs indicate system states such as standby, open, or full. This build demonstrates control system logic and practical servo integration for real-world automation.",
+      "tools": ["Arduino", "Ultrasonic Sensor", "Servo Motor", "LED Indicators"]
+    },
+    {
+      "title": "Ultrasonic Radar / UAV Sonar",
+      "description": "This radar-style scanning system uses a rotating ultrasonic sensor mounted on a servo motor to detect surrounding objects within a 180° or 360° range. The results are visualized on a serial monitor or graphical interface, providing a low-cost alternative to traditional radar modules. It’s an excellent example of combining mechanical motion control with data visualization and sensing technology.",
+      "tools": ["Arduino", "HC-SR04", "Servo Motor", "Serial Monitor"]
+    },
+    {
+      "title": "Google Voice Automation Workflow",
+      "description": "An automation process that integrates Google Voice with Microsoft Power Automate to send ticket numbers, confirmation codes, and status updates through text messages. It simplifies communication between workers and system managers by automatically responding to status requests. This workflow bridges telecommunication APIs and automation platforms, showing Aaron’s ability to merge consumer and enterprise tools into a unified solution.",
+      "tools": ["Power Automate", "Google Voice API", "Communication Automation"]
+    }
+  ]
+  
