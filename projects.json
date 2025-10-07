@@ -24,7 +24,7 @@
       "title": "Automation Ticketing Workflow",
       "description": "Power Automate workflow for creating, tracking, and closing jobsite tickets. Integrates Microsoft Teams notifications, timestamping, and automatic status updates via email and SMS.",
       "tools": ["Microsoft Power Automate", "Microsoft Teams", "Logic Expressions", "Email Automation"],
-      "category": "automation"
+      "category": "automation",
         "status": "In Use"
     },
     {
@@ -87,5 +87,6 @@
     }
   ]
   
+
 
 
