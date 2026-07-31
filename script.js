@@ -40,6 +40,7 @@ document.querySelector(".filters").addEventListener("click", event => {
   render(button.dataset.filter);
 });
 projectList.addEventListener("click", event => { const button = event.target.closest(".case-trigger"); if (button) openCaseStudy(button.dataset.slug); });
+document.addEventListener("click", event => { const link = event.target.closest("[data-case-study]"); if (!link) return; event.preventDefault(); openCaseStudy(link.dataset.caseStudy); });
 document.querySelector(".dialog-close").addEventListener("click", () => dialog.close());
 dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
 dialog.addEventListener("close", () => document.body.classList.remove("dialog-open"));
